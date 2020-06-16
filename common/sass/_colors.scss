@@ -1,0 +1,87 @@
+/* 常用的颜色 */
+
+/*字体颜色*/
+.text-color-white{
+	color: #fff !important;
+}
+.text-color-grey{
+	color: $uni-text-color-grey;
+}
+.text-color-placeholder{
+	color: $uni-text-color-placeholder;
+}
+.text-color-disable{
+	color: $uni-text-color-disable;
+}
+.text-color-primary{
+	color: $uni-color-primary !important;
+}
+.text-color-green{
+	color: $uni-color-assist-green;
+}
+.text-color-yellow{
+	color: $uni-color-assist-yellow;
+}
+.text-color-pink{
+	color: $uni-color-assist-pink;
+}
+.text-color-red{
+	color: $uni-color-assist-red !important;
+}
+
+/*背景色*/
+.bg-color-white{
+	background-color: #FFFFFF;
+}
+.bg-color-primary{
+	background-color: $uni-color-primary !important;
+}
+.bg-color-second-primary{
+	background-color: $uni-color-secondly !important;
+}
+.bg-color-green{
+	background-color: $uni-color-assist-green !important;
+}
+.bg-color-yellow{
+	background-color: $uni-color-assist-yellow !important;
+}
+.bg-color-pink{
+	background-color: $uni-color-assist-pink !important;;
+}
+.bg-color-red{
+	background-color: $uni-color-assist-red !important;
+}
+.bg-color-border{
+	background-color: $uni-border-color !important;
+}
+// 文字的背景色
+.bg-text-color{
+	background-color: $uni-text-color !important;;
+}
+.bg-text-color-grey{
+	background-color: $uni-text-color-grey;
+}
+.bg-text-color-disabled{
+	background-color: $uni-text-color-disable;
+}
+.bg-text-color-placeholder{
+	background-color: $uni-text-color-placeholder;
+}
+// 遮盖层的颜色
+.bg-color-mask{
+	background-color: $uni-bg-color-mask;
+}
+//背景色
+.bg-color{
+	background-color: $uni-bg-color;
+}
+// 边框色
+.border-color-default{
+	border-color: $uni-border-color;
+}
+.border-color-primary{
+	border-color: $uni-color-primary;
+}
+.border-color-red{
+	border-color: $uni-color-assist-red;
+}

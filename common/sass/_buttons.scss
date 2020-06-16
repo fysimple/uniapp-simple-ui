@@ -1,0 +1,55 @@
+/*buttons style*/
+@import '@/common/sass/_mixins.scss';
+uni-button{
+	border-radius: initial;
+}
+.custom-btn{
+	display:initial;
+	padding: 0;
+	font-size: $uni-font-size-base;
+	line-height: initial;
+	&::after{
+		content: none;
+	}
+	&[disabled]{
+		opacity: .45;
+		background-color: initial;
+	}
+	&.block{
+		display: block;
+	}
+	&-normal{
+		display: block;
+		height: 80rpx;
+		line-height: 80rpx;
+		color: #fff;
+		&[disabled].bg-color-primary{
+			color: #FFFFFF;
+		}
+	}
+	&-border{
+		border-width: 1rpx;
+		border-style: solid;
+		background-color: transparent;
+		&[disabled]{
+			background-color: transparent !important;
+		}
+	}
+	&-small{
+		display: inline-block;
+		padding:$uni-spacing-col-sm $uni-font-size-lg;
+	}
+	&_round{
+		border-radius: 40rpx;
+	}
+	.icons{
+		margin-right: 5rpx;
+		&_bottom{
+			vertical-align: bottom;
+		}
+		&_middle{
+			vertical-align: middle;
+		}
+	}
+	
+}

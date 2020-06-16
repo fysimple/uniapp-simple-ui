@@ -1,0 +1,71 @@
+// flex layout
+/* 1、flex parent:flex-flow[ flex-direction | flex-wrap]、justity-content、align-items、align-content */
+/* 2、flex item：order、flex[flex-grow、flex-shrink、flex-basis]、 align-self */
+/* 3、特殊情况：item中行截取，无法生效时，设置父类 overflow：hidden */
+.flex{
+	display: flex;
+	&-wrap_wrap{
+		flex-wrap: wrap;
+	}
+	&-direction_column{
+		flex-direction: column;
+	}
+	&-align_center{
+		align-items: center;
+	}
+	&-justify_center{
+		justify-content: center;
+	}
+	&-justify_around{
+		justify-content: space-around;
+	}
+	&-justify_between{
+		justify-content: space-between;
+	}
+	&-justify_end{
+		justify-content: flex-end;
+	}
+	&-flex_1{
+		flex: 1;
+	}
+	.item,&-item{
+		overflow: hidden;
+		&.center{
+			text-align: center;
+		}
+	}
+	&_col2{
+		flex-wrap: wrap;
+		align-items: center;
+		.flex-item{
+			flex-shrink: 0;
+			width: calc(100%/2);	
+		}
+	}
+	&_col3{
+		flex-wrap: wrap;
+		align-items: center;
+		.flex-item{
+			flex-shrink: 0;
+			width: calc(100%/3);	
+		}
+	}
+	&_col4{
+		flex-wrap: wrap;
+		align-items: center;
+		.flex-item{
+			flex-shrink: 0;
+			width: calc(100%/4);	
+		}
+	}
+	&-grid{
+		&_border{
+			.flex-item{
+				border-top: 1rpx solid $uni-border-color;
+				& + .flex-item{
+					border-left: 1rpx solid $uni-border-color;
+				}
+			}
+		}
+	}
+}

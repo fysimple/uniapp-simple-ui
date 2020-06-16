@@ -1,0 +1,36 @@
+/*间距、行距 */
+.mg-top-lg{
+	margin-top: $uni-spacing-col-lg;
+}
+.mg-top-base{
+	margin-top: $uni-spacing-col-base;
+}
+.mg-top-sm{
+	margin-top: $uni-spacing-col-sm;
+}
+.mg-bottom-base{
+	margin-bottom: $uni-spacing-col-base;
+}
+.mg-left-sm{
+	margin-left: $uni-spacing-col-sm;
+}
+.mg-left-base{
+	margin-left: $uni-spacing-col-base;
+}
+/*内边距*/
+.pd-bottom-base{
+	padding-bottom: $uni-spacing-col-base;
+}
+
+//标题的外边距
+.title-spacing{
+	margin: $uni-spacing-col-lg 40rpx;
+}
+
+//模块的内/外边距
+.box-mg-spacing{
+	margin:$uni-spacing-row-base $uni-spacing-row-lg;
+}
+.box-pd-spacing{
+	padding: $uni-spacing-row-lg;
+}

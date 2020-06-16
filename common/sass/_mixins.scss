@@ -1,0 +1,12 @@
+/*混合函数定义*/
+
+//  背景色是在字体颜色的透明值
+@mixin setBgAndColor($value:$uni-color-primary,$alpha:.25) {
+	color: $value;
+	background-color: rgba($value,$alpha);
+}
+
+//渐变色
+@mixin setLinearColor($value...) {
+	background-image: linear-gradient($value);
+}

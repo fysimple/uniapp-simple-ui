@@ -1,0 +1,56 @@
+/*样式重置 */
+@import './mixins.scss';
+
+//块元素
+.com-block{
+	display: block;
+}
+// 标题
+.com-module-title{
+	font-size: $uni-font-size-xl;
+	background-color: #fff;
+	text{
+		display: block;
+		padding: $uni-spacing-col-lg $uni-spacing-col-lg;
+	}
+	&::after{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 4rpx;
+		@include setLinearColor(45deg,$uni-color-assist-yellow,$uni-color-assist-red,$uni-color-secondly,$uni-color-primary);
+	}
+}
+.com-title{
+	margin: $uni-spacing-col-lg auto;
+	font-size: $uni-font-size-lg;
+	color:$uni-color-title ;
+	&::after{
+		content: '';
+		margin-top: 10rpx;
+		display: block;
+		width: 60rpx;
+		height: 4rpx;
+		background-color: $uni-color-primary;
+		border-radius: 10rpx;
+		opacity: .8;
+	}
+}
+// box
+.com-box-spacing{
+	@extend .box-mg-spacing;
+	@extend .box-pd-spacing;
+	background-color: #FFFFFF;
+	border-radius: $uni-border-radius-lg;
+	box-shadow:$box-shadow;
+}
+
+//文本省略
+.com-text-ellipsis{
+	width: 100%;
+	display: block;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
