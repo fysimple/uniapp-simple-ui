@@ -1,0 +1,101 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText":"首页",
+				"navigationStyle":"default"
+			}
+		}
+    ],
+	"subPackages":[{
+		"root":"pages-style", //样式
+		"pages":[
+			{
+				"path" : "index/index",
+				"style" : {
+					"navigationBarTitleText":"样式"
+				}
+			},
+			{
+			    "path" : "colors/colors", 
+			    "style" : {
+					"navigationBarTitleText":"色值"
+				}
+			}
+			,{
+			    "path" : "fonts/fonts",
+			    "style" : {
+					"navigationBarTitleText":"字体"
+				}
+			}
+			,{
+			    "path" : "buttons/buttons",
+			    "style" : {
+					"navigationBarTitleText":"按钮"
+				}
+			},
+			{
+			    "path" : "icons/icons",
+			    "style" : {
+					"navigationBarTitleText":"图标"
+				}
+			},
+			{
+			    "path" : "grids/grids",
+			    "style" : {
+					"navigationBarTitleText":"九宫格"
+				}
+			}
+			,{
+			    "path" : "lists/lists",
+			    "style" : {
+			    	"navigationBarTitleText":"列表"
+			    }
+			},
+			{
+			    "path" : "swipers/swipers",
+			    "style" : {
+					"navigationBarTitleText":"滑动切换"
+				}
+			}]
+	},
+	{
+		"root":"pages-algorithm", //算法
+		"pages":[
+			{
+				"path" : "index/index",
+				"style" : {
+					"navigationBarTitleText":"算法",
+					"navigationStyle":"default"
+				}
+			}]
+	},
+	{
+		"root":"pages-animation", //动画
+		"pages":[
+			{
+				"path" : "index/index",
+				"style" : {
+					"navigationBarTitleText":"动画"
+				}
+			}]
+	},
+	{
+		"root":"pages-question", //问题
+		"pages":[
+			{
+				"path" : "index/index",
+				"style" : {
+					"navigationBarTitleText":"问题"
+				}
+			}]
+	}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "simple ui",
+		"navigationBarBackgroundColor": "#3f6ff1",
+		"backgroundColor":"#f8f9f8"
+	}
+}

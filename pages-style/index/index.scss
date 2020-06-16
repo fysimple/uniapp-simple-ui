@@ -1,0 +1,94 @@
+@import  '@/common/sass/_mixins.scss';
+.top{
+	$height:280rpx;
+	padding:$uni-spacing-col-base * 2;
+	height: $height;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	&::before,&::after{
+		content: '';
+		position: absolute;
+		width:100%;
+		height:$height;
+		// transform: translateY(-100rpx);
+	}
+	&::before{
+		top: 0;
+		left: 0;
+		background-color: $uni-color-primary;
+		border-radius:0 0 100% 0;
+		z-index: -1;
+	}
+	&::after{
+		top: 0;
+		right: 0;
+		background-color: $uni-color-secondly;
+		border-radius:0 0 0 100%;
+		z-index: -2;
+	}
+	.flex{
+		color: rgba($color: #ffffff, $alpha: 1);
+		.user-logo{
+			margin-right: $uni-spacing-row-lg;
+			width: 120rpx;
+			height: 120rpx;
+			border: 8rpx solid rgba(255,255,255,.5);
+			border-radius: 50%;
+		}
+		.describe{
+			color: rgba($color: #ffffff, $alpha: .5);
+		}
+	}
+}
+.grid-wrapper{
+	margin-top: -120rpx;
+	position: relative;
+	z-index: 2;
+	.flex-item{
+		background-color: #FFFFFF;
+		text-align:  center;
+	}
+	.line{
+		width: 2rpx;
+		height: 80rpx;
+		background-color: $uni-border-color;
+	}
+	.imgs{
+		width: 50rpx;
+		height: 50rpx;
+	}
+}
+.basic-lists{
+	padding-top: 0;
+	padding-bottom: 0;
+	.flex-item{
+		padding: $uni-spacing-col-lg $uni-spacing-col-base;
+		+ .flex-item{
+			border-top: 1px dashed $uni-border-color;
+		}
+	}
+	.icon-color{
+		margin-right:$uni-spacing-col-lg;
+		width: 70rpx;
+		height: 70rpx;
+		text-align: center;
+		line-height: 70rpx;
+		border-radius:50%;
+		&.green{
+			@include setBgAndColor($uni-color-assist-green);
+		}
+		&.yellow{
+			@include setBgAndColor($uni-color-assist-yellow);
+		}
+		&.primary{
+			@include setBgAndColor();
+		}
+		&.pink{
+			@include setBgAndColor($uni-color-assist-pink);
+		}
+		&.red{
+			@include setBgAndColor($uni-color-assist-red);
+		}
+	}
+}
