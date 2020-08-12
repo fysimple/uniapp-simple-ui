@@ -1,6 +1,6 @@
 <template>
 	<view>
-		算法
+		<view class="com-module-title"></view>
 	</view>
 </template>
 
