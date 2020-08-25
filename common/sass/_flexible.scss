@@ -30,6 +30,7 @@
 	}
 	.item,&-item{
 		overflow: hidden;
+		box-sizing: border-box;
 		&.center{
 			text-align: center;
 		}
@@ -46,6 +47,7 @@
 		flex-wrap: wrap;
 		align-items: center;
 		.flex-item{
+			margin-bottom: $uni-spacing-col-base;
 			flex-shrink: 0;
 			width: calc(100%/3);	
 		}
